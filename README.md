@@ -37,7 +37,10 @@ pnpm run build
 ## Credits
 
 - Images from [Unsplash](https://unsplash.com/)
-
+- 705 Shirt Brave https://unsplash.com/photos/A7f7XRKgUWc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- Haryo Setyadi Shirt https://unsplash.com/photos/acn5ERAeSb4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- Faith Yarn shirt https://unsplash.com/photos/Wr0TpKqf26s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- T Shirt 32 https://unsplash.com/photos/6Nub980bI3I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 ## Misc
 
 Follow *Author*: [Twitter](https://twitter.com/igorpenaque), [GitHub](https://github.com/igorm84)
