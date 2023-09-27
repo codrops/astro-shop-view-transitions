@@ -13,7 +13,7 @@ https://github.com/igorm84/astro-shop-view-transitions/assets/16727448/82adab9a-
 1. Clone the repository
 
 ```bash
-git clone https://github.com/igorm84/rediscord
+git clone https://github.com/codrops/astro-shop-view-transition
 ```
 
 2. Install dependencies
