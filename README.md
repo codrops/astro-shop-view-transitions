@@ -19,19 +19,20 @@ git clone https://github.com/codrops/astro-shop-view-transition
 2. Install dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
-3. Start development server
+3. Run local using dev server
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 3. Build for production
 ```bash
-npm run build
+pnpm run build
 ```
+> *This will provide /dist folder with all static data for the site*
 
 ## Credits
 
