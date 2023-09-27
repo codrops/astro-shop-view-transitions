@@ -1,0 +1,42 @@
+---
+import type { Product } from "../data";
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const transitionName = product.slug;
+---
+
+<a href={`/product/${product.slug}`} class="block">
+  <article
+    class="group bg-flex flex-col sm:w-60 w-72 bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-100 transition-all"
+  >
+    <div class="sm:w-60 w-72 h-60 overflow-hidden">
+      <img
+        src={product.cover}
+        alt={product.name}
+        transition:name={`${transitionName} image`}
+        class="object-cover object-center w-full grayscale-[0.1] group-hover:grayscale-0 h-full rounded-md group-hover:scale-105 transition-all"
+      />
+    </div>
+    <div class="p-4">
+      <h3
+        class="font-semibold truncate"
+        transition:name={`${transitionName} title`}
+      >
+        {product.name}
+      </h3>
+      <p
+        class="text-gray-600 text-sm truncate"
+        transition:name={`${transitionName} description`}
+      >
+        {product.description}
+      </p>
+      <div class="text-right mt-4" transition:name={`${transitionName} price`}>
+        <span class="font-semibold">${product.price}</span>
+      </div>
+    </div>
+  </article>
+</a>

@@ -1,0 +1,106 @@
+---
+import Icon from "astro-icon";
+import { ViewTransitions } from "astro:transitions";
+interface Props {
+  title: string;
+  image?: string;
+  description?: string;
+}
+
+const {
+  title,
+  image = "/products/ryan-hoffman-A7f7XRKgUWc-unsplash.webp",
+  description = "A simple Shop built in Astro using View Transitions and TailwindCSS",
+} = Astro.props;
+
+const imageUrl = import.meta.env.PUBLIC_URL
+  ? new URL(image, import.meta.env.PUBLIC_URL)
+  : image;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="product" />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:description" content={description} />
+
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} - Astro Transitions Shop</title>
+    <ViewTransitions />
+  </head>
+  <body class="bg-gradient-to-tl via-transparent from-gray-500/5">
+    <nav class="absolute top-0 right-0 p-6 lg:p-2">
+      <a href="https://github.com/igorm84/astro-shop" target="_blank">
+        <Icon name="mdi:github" class="h-6 w-6 lg:h-8 lg:w-8 text-gray-800" />
+      </a>
+    </nav>
+    <main
+      class="relative max-w-6xl min-h-screen mx-auto py-6 lg:pt-10 px-4 pb-20"
+    >
+      <slot />
+      <footer
+        class="text-gray-400 text-xs text-center py-8 absolute bottom-0 inset-x-0"
+      >
+        <a
+          href="https://github.com/igorm84"
+          class="inline-flex items-center gap-2"
+          target="_blank"
+          >Built by Igor Penaque @ 2023
+        </a>
+      </footer>
+    </main>
+
+    <style is:global>
+      :root {
+      }
+      body {
+        background-color: theme(colors.gray.50);
+      }
+      .animate-in {
+        animation: animate-in 0.5s ease-in-out;
+      }
+      /* Firefox */
+      * {
+        scrollbar-width: auto;
+        scrollbar-color: #c7c7c7 #ededed;
+      }
+
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 15px;
+      }
+
+      *::-webkit-scrollbar-track {
+        background: #ededed;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: #c7c7c7;
+        border-radius: 5px;
+        border: 2px solid #ffffff;
+      }
+      @keyframes animate-in {
+        0% {
+          opacity: 0;
+          transform: translateY(1rem);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </body>
+</html>

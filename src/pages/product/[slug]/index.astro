@@ -1,0 +1,97 @@
+---
+import { type Product, products } from "../../../data";
+import Layout from "../../../layouts/Layout.astro";
+import ProductCard from "../../../components/ProductCard.astro";
+import Icon from "astro-icon";
+const { slug } = Astro.params;
+
+export function getStaticPaths() {
+  return [
+    ...products.map((product) => ({
+      params: {
+        slug: product.slug,
+      },
+    })),
+  ];
+}
+
+const product = products.find((product) => product.slug === slug) as Product;
+---
+
+<Layout
+  title={product.name}
+  description={product.description}
+  image={product.cover}
+>
+  <div class="max-w-5xl mx-auto relative">
+    <a
+      href="/"
+      class="absolute xl:-left-14 top-8 xl:-top-1 xl:bg-none bg-gradient-to-br from-gray-100 rounded p-2 z-10"
+      ><Icon name="mdi:chevron-left" class="h-6 w-6" /></a
+    >
+    <div class="flex gap-2 pb-2 items-center text-gray-500">
+      <a class="after:content-['/'] after:pl-2 capitalize" href="/">home</a>
+      <span class="after:content-['/'] after:pl-2 capitalize"
+        >{product.category}</span
+      >
+      <span>{product.name}</span>
+    </div>
+    <div class="flex flex-col md:flex-row sm sm:gap-8">
+      <div class="max-w-[450px] w-full h-full max-h-[450px]">
+        <img
+          src={product.cover}
+          alt={product.name}
+          class="w-full h-full object-cover rounded-xl shadow-2xl shadow-gray-200 border-b"
+          transition:name={`${slug} image`}
+        />
+      </div>
+      <article class="py-4 flex justify-between flex-col">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-bold animate-in">
+            {product.name}
+          </h1>
+          <div transition:name={`${slug} title`}></div>
+          <p
+            class="max-w-sm py-4 text-lg"
+            transition:name={`${slug} description`}
+          >
+            {product.description}
+          </p>
+        </div>
+        <div class="pt-2 sm:pt-8 text-right">
+          <div class="text-3xl font-semibold" transition:name={`${slug} price`}>
+            ${product.price}
+          </div>
+          <div class="text-xs text-gray-500">* This is a fictional price</div>
+          <button
+            type="button"
+            class="mt-4 px-5 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-full"
+            >Add to cart</button
+          >
+        </div>
+      </article>
+    </div>
+    <div class="py-6 md:py-20 max-w-3xl">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt magnam
+      quia, explicabo dolor velit aut omnis natus consequatur possimus fuga illo
+      commodi asperiores dignissimos. Consequuntur nam quae commodi quas, magni
+    </div>
+    <h4 class="font-bold text-lg">Similar products</h4>
+    <div class="flex flex-wrap justify-center sm:justify-normal gap-4">
+      {
+        products
+          .filter((p) => p.category === product.category && p.id !== product.id)
+          .map((pr) => <ProductCard product={pr} />)
+      }
+    </div>
+  </div>
+</Layout>
+
+<script>
+  document.addEventListener("click", (event) => {
+    if (location.pathname === "/") return;
+    if ((event as any)?.target?.tagName === "A") {
+      document.querySelector(".animate-in")?.classList.add("opacity-0");
+    }
+  });
+</script>

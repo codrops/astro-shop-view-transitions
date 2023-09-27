@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { products } from "../data";
+import ProductCard from "../components/ProductCard.astro";
+---
+
+<Layout title="Shop">
+  <div class="flex gap-3 items-end">
+    <h1 class="text-4xl font-bold">Astro Shop</h1>
+  </div>
+  <h3 class="text-xl text-gray-500">
+    Take a look in our products, feel free to buy some
+  </h3>
+  <div class="flex flex-wrap justify-center sm:justify-normal gap-4 py-8">
+    {products.map((product) => <ProductCard {product} />)}
+  </div>
+</Layout>
