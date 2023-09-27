@@ -1,17 +1,8 @@
-*How to use this template:*
+# Minimalist Shop with View Transitions and Astro [![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
 
-- Styles for the demo go in css/base.css
-- Add build instructions and credits to the README.md
-- For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' intro in the final version and leave the following (fill in title/description, credits and social links of your likings, we'll do the rest):
+*Minimalist Shop with Browser View Transitions API and Astro for a smoother navigation experience.*
 
--------
-
-# The Title
-
-*A description of the demo goes here.*
-
-![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
+https://github.com/igorm84/astro-shop-view-transitions/assets/16727448/82adab9a-f8c4-4cbe-8886-e2c60f28f826
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
@@ -19,15 +10,36 @@
 
 ## Installation
 
-Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
+1. Clone the repository
+
+```bash
+git clone https://github.com/igorm84/rediscord
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start development server
+
+```bash
+npm run dev
+```
+
+3. Build for production
+```bash
+npm run build
+```
 
 ## Credits
 
-- Images generated with [Midjourney](https://midjourney.com)
+- Images from [Unsplash](https://unsplash.com/)
 
 ## Misc
 
-Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
+Follow *Author*: [Twitter](https://twitter.com/igorpenaque), [GitHub](https://github.com/igorm84)
 
 Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
