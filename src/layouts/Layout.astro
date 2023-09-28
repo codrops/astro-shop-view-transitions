@@ -1,6 +1,7 @@
 ---
 import Icon from "astro-icon";
 import { ViewTransitions } from "astro:transitions";
+import { previousHref, previousText } from "../config";
 interface Props {
   title: string;
   image?: string;
@@ -50,15 +51,12 @@ const imageUrl = import.meta.env.PUBLIC_URL
       class="relative max-w-6xl min-h-screen mx-auto py-6 lg:pt-10 px-4 pb-20"
     >
       <slot />
-      <footer
-        class="text-gray-400 text-xs text-center py-8 absolute bottom-0 inset-x-0"
-      >
+      <footer class="absolute bottom-0 inset-x-0 text-center">
         <a
-          href="https://github.com/igorm84"
-          class="inline-flex items-center gap-2"
-          target="_blank"
-          >Built by Igor Penaque @ 2023
-        </a>
+          href={previousHref}
+          class="inline-flex items-center gap-1 text-gray-400 text-xl hover:underline hover:text-gray-950 py-8"
+          >{previousText}</a
+        >
       </footer>
     </main>
 

@@ -2,11 +2,26 @@
 import Layout from "../layouts/Layout.astro";
 import { products } from "../data";
 import ProductCard from "../components/ProductCard.astro";
+import { tutorialHref, tutorialText } from "../config";
 ---
 
 <Layout title="Shop">
   <div class="flex gap-3 items-end">
     <h1 class="text-4xl font-bold">Astro Shop</h1>
+    <a
+      aria-label="Go to the article"
+      class="flex items-center hover:underline text-blue-500 text-lg gap-1"
+      href={tutorialHref}
+    >
+      <span class="oh__inner">{tutorialText}</span>
+      <svg width="18px" height="18px" viewBox="0 0 24 24"
+        ><path
+          vector-effect="non-scaling-stroke"
+          fill="currentColor"
+          d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"
+        ></path>
+      </svg>
+    </a>
   </div>
   <h3 class="text-xl text-gray-500">
     Take a look in our products, feel free to buy some
