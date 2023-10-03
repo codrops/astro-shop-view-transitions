@@ -11,9 +11,9 @@ const transitionName = product.slug;
 
 <a href={`/product/${product.slug}`} class="block">
   <article
-    class="group bg-flex flex-col sm:w-60 w-72 bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-100 transition-all"
+    class="group bg-flex flex-col sm:w-64 w-1/4 bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-100 transition-all"
   >
-    <div class="sm:w-60 w-72 h-60 overflow-hidden">
+    <div class="sm:w-64 w-1/4 overflow-hidden">
       <img
         src={product.cover}
         alt={product.name}
@@ -21,7 +21,7 @@ const transitionName = product.slug;
         class="object-cover object-center w-full grayscale-[0.1] group-hover:grayscale-0 h-full rounded-md group-hover:scale-105 transition-all"
       />
     </div>
-    <div class="p-4">
+    <div class="p-6">
       <h3
         class="font-semibold truncate"
         transition:name={`${transitionName} title`}

@@ -18,7 +18,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 32,
-    name: "705 Shirt Brave",
+    name: "705 Brave",
     slug: "t-705-shirt-brave",
     price: 129,
     description:
@@ -30,7 +30,7 @@ export const products: Product[] = [
   },
   {
     id: 18,
-    name: "Haryo Setyadi Shirt",
+    name: "Haryo Setyadi",
     slug: "haryo-setyadi-shirt",
     price: 199,
     description:
@@ -42,7 +42,7 @@ export const products: Product[] = [
   },
   {
     id: 21,
-    name: "Faith Yarn shirt",
+    name: "Faith Yarn T-Shirt",
     slug: "faith-yarn-shirt",
     price: 59,
     description:
@@ -55,11 +55,11 @@ export const products: Product[] = [
 
   {
     id: 49,
-    name: "T Shirt 32",
+    name: "T-Shirt 705",
     slug: "t-shirt-32",
     price: 99,
     description:
-      "Stay Cool and Dry with the T Shirt 32 from Ryan Hoffman Collection. Relax, run, dream.",
+      "Stay Cool and Dry with the T-Shirt 705 from Ryan Hoffman Collection. Relax, run, dream.",
     cover: "/products/ryan-hoffman-6Nub980bI3I-unsplash.webp",
     coverCredits:
       "https://unsplash.com/photos/6Nub980bI3I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",

@@ -1,7 +1,6 @@
 ---
 import Icon from "astro-icon";
 import { ViewTransitions } from "astro:transitions";
-import { previousHref, previousText } from "../config";
 interface Props {
   title: string;
   image?: string;
@@ -42,22 +41,10 @@ const imageUrl = import.meta.env.PUBLIC_URL
     <ViewTransitions />
   </head>
   <body class="bg-gradient-to-tl via-transparent from-gray-500/5">
-    <nav class="absolute top-0 right-0 p-6 lg:p-2">
-      <a href="https://github.com/igorm84/astro-shop" target="_blank">
-        <Icon name="mdi:github" class="h-6 w-6 lg:h-8 lg:w-8 text-gray-800" />
-      </a>
-    </nav>
     <main
       class="relative max-w-6xl min-h-screen mx-auto py-6 lg:pt-10 px-4 pb-20"
     >
       <slot />
-      <footer class="absolute bottom-0 inset-x-0 text-center">
-        <a
-          href={previousHref}
-          class="inline-flex items-center gap-1 text-gray-400 text-xl hover:underline hover:text-gray-950 py-8"
-          >{previousText}</a
-        >
-      </footer>
     </main>
 
     <style is:global>

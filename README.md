@@ -4,9 +4,9 @@
 
 https://github.com/igorm84/astro-shop-view-transitions/assets/16727448/82adab9a-f8c4-4cbe-8886-e2c60f28f826
 
-[Article on Codrops](https://tympanus.net/codrops/?p=)
+[Article on Codrops](https://tympanus.net/codrops/?p=73418)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](http://tympanus.net/Development/AstroShop/)
 
 ## Installation
 
@@ -43,7 +43,7 @@ pnpm run build
 - T Shirt 32 https://unsplash.com/photos/6Nub980bI3I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 ## Misc
 
-Follow *Author*: [Twitter](https://twitter.com/igorpenaque), [GitHub](https://github.com/igorm84)
+Follow Igor: [Twitter](https://twitter.com/igorpenaque), [GitHub](https://github.com/igorm84)
 
 Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
