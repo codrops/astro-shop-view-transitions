@@ -9,7 +9,7 @@ const { product } = Astro.props;
 const transitionName = product.slug;
 ---
 
-<a href={`/product/${product.slug}`} class="block">
+<a href={`product/${product.slug}`} class="block">
   <article
     class="group bg-flex flex-col sm:w-64 w-1/4 bg-white shadow-sm rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gray-100 transition-all"
   >
