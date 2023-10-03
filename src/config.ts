@@ -9,4 +9,4 @@ export const previousText = "Previous demo";
 export const previousHref = "http://tympanus.net/Development/SlideshowAnimations/";
 
 export const githubText   = "GitHub"
-export const githubHref   = "https://github.com/codrops/astro-shop"
+export const githubHref   = "https://github.com/codrops/astro-shop-view-transitions"
