@@ -6,7 +6,7 @@ https://github.com/igorm84/astro-shop-view-transitions/assets/16727448/82adab9a-
 
 [Article on Codrops](https://tympanus.net/codrops/?p=73418)
 
-[Demo](https://github.com/codrops/astro-shop-view-transitions)
+[Demo](https://astro-shop-ten.vercel.app/)
 
 ## Installation
 
