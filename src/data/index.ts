@@ -23,7 +23,7 @@ export const products: Product[] = [
     price: 129,
     description:
       "Stay Brave with the 705 Shirt from Ryan Hoffman Collection. Show your bravery and drinks some beer with.",
-    cover: "products/ryan-hoffman-A7f7XRKgUWc-unsplash.webp",
+    cover: "/products/ryan-hoffman-A7f7XRKgUWc-unsplash.webp",
     coverCredits:
       "https://unsplash.com/photos/A7f7XRKgUWc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
     category: ProductCategory.Shirts,
@@ -35,7 +35,7 @@ export const products: Product[] = [
     price: 199,
     description:
       "Feel the Comfort and Peace of the Haryo Setyadi Shirt white as snow. Don't worry about the stain, it's easy to clean.",
-    cover: "products/haryo-setyadi-acn5ERAeSb4-unsplash.webp",
+    cover: "/products/haryo-setyadi-acn5ERAeSb4-unsplash.webp",
     coverCredits:
       "https://unsplash.com/photos/acn5ERAeSb4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
     category: ProductCategory.Shirts,
@@ -47,7 +47,7 @@ export const products: Product[] = [
     price: 59,
     description:
       "Elevate Your Style and Comfort with the Faith Yarn Shoes. Designed to stay cool and dry all day.",
-    cover: "products/faith-yarn-Wr0TpKqf26s-unsplash.webp",
+    cover: "/products/faith-yarn-Wr0TpKqf26s-unsplash.webp",
     coverCredits:
       "https://unsplash.com/photos/Wr0TpKqf26s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
     category: ProductCategory.Shirts,
@@ -60,7 +60,7 @@ export const products: Product[] = [
     price: 99,
     description:
       "Stay Cool and Dry with the T-Shirt 705 from Ryan Hoffman Collection. Relax, run, dream.",
-    cover: "products/ryan-hoffman-6Nub980bI3I-unsplash.webp",
+    cover: "/products/ryan-hoffman-6Nub980bI3I-unsplash.webp",
     coverCredits:
       "https://unsplash.com/photos/6Nub980bI3I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
     category: ProductCategory.Shirts,
